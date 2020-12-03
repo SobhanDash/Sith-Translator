@@ -8,7 +8,7 @@
 /* root */
 :root {
     --primary: #ff0000;
-    --blue: #2d2b3c;
+    --darkgrey: #2d2b3c;
     --black: #242424;
     --darkblack: #000000;
     --side: #dfdfdf;
@@ -18,7 +18,7 @@
 body {
     font-family: 'Nerko One', cursive;
     margin: 0px;
-    color: var(--blue);
+    color: var(--darkgrey);
     background: url('minion3.png'), var(--primary);
 }
 
@@ -80,7 +80,7 @@ p {
     font-family: 'Kalam', cursive;
     color: var(--darkblack);
     font-size: large;
-    background-color: var(--blue);
+    background-color: var(--darkgrey);
 }
 
 img {
@@ -127,7 +127,7 @@ footer {
 }
 
 footer .link {
-    color: var(--blue);
+    color: var(--darkgrey);
     text-decoration: none;
     width: max-content;
 
