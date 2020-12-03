@@ -1,5 +1,5 @@
 /* import font */
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Nerko+One&family=Press+Start+2P&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,11 +7,11 @@
 
 /* root */
 :root {
-    --primary: #F2C94C;
-    --blue: #0A75BC;
-    --black: #333333;
+    --primary: #ff0000;
+    --blue: #2d2b3c;
+    --black: #242424;
     --darkblack: #000000;
-    --side: #C84BF1;
+    --side: #dfdfdf;
     --width-break: 600px;
 }
 
@@ -24,7 +24,7 @@ body {
 
 /* nav */
 .navigation {
-    font-family: 'Kalam', cursive;
+    font-family: 'Press Start 2P', cursive;
     font-size: 3rem;
     padding: 1rem;
     background-color: var(--primary);
