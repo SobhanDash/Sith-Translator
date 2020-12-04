@@ -7,11 +7,11 @@
 
 /* root */
 :root {
-    --primary: #ff0000;
+    --primary: #F90401;
     --darkgrey: #2d2b3c;
     --black: #242424;
     --darkblack: #000000;
-    --side: #dfdfdf;
+    --side: #8900f2;
     --width-break: 600px;
 }
 
@@ -19,7 +19,7 @@ body {
     font-family: 'Nerko One', cursive;
     margin: 0px;
     color: var(--darkgrey);
-    background: url('/images/sithbgmain.png'), var(--primary);
+    background: url('/images/sithbgmain2.png'), var(--primary);
     background-position: center;
 }
 
@@ -30,6 +30,8 @@ body {
     padding: 1rem;
     background-color: var(--primary);
     text-align: center;
+    color: var(--side);
+    background-image: linear-gradient(to bottom right, var(--primary), var(--black));
 }
 
 /* main */
@@ -48,8 +50,11 @@ textarea {
     width: 100%;
     min-height: 20vh;
     margin-top: 2rem;
-    font-size: larger;
+    font-size: large;
     font-family: 'Nerko One', cursive;
+    background-color: var(--darkgrey);
+    color: var(--primary);
+    overflow: hidden;
 }
 
 /* button */
@@ -59,9 +64,10 @@ button {
     min-height: 10vh;
     padding: 2rem 1rem;
     font-family: 'Kalam', cursive;
-    font-size: larger;
+    font-size: x-large;
     margin: 1rem 0rem;
     border: none;
+    border-radius: 1rem;
 }
 
 /* h1 */
@@ -79,20 +85,19 @@ p {
     max-width: var(--width-break);
     margin: auto;
     font-family: 'Kalam', cursive;
-    color: var(--darkblack);
+    color: var(--primary);
     font-size: large;
-    background-color: var(--darkgrey);
+    background-color: var(--black);
 }
 
 img {
     margin: 0px;
     padding: 1rem 0rem;
-    min-width: 30%;
-    max-width: 100%;
-    min-height: 10vh;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
     box-sizing: border-box;
     display: block;
+    border-radius: 30px;
 }
 
 /* output textarea */
@@ -103,7 +108,9 @@ img {
     max-height: 20vh;
     border: 2px solid var(--black);
     overflow: auto;
-    color: var(--darkblack);
+    color: var(--primary);
+    background-color: var(--darkgrey);
+    font-size: large;
 }
 
 /* list */
@@ -125,10 +132,11 @@ footer {
     padding: 1rem;
     font-family: 'Kalam', cursive;
     font-size: x-large;
+    background-image: linear-gradient(to top right, var(--black), var(--primary));
 }
 
 footer .link {
-    color: var(--darkgrey);
+    color: var(--side);
     text-decoration: none;
     width: max-content;
 
@@ -137,3 +145,40 @@ footer .link {
 footer ul {
     padding-inline-start: 0px;
 }
+
+.footer__icon {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin: 0 1rem;
+  }
+
+.footer__icon:hover {
+    color: var(--dark-gray);
+  }
+  
+/* animation */
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+  
+  
+  
+  /* For demonstration purposes only: */
+  body { font-size: 3.5em }
+  h1 { font-size: 0.5em }
