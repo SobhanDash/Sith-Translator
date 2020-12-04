@@ -1,6 +1,6 @@
 var btnTranslator = document.querySelector("#btn-Translate");
 var txtInput = document.querySelector("#txt-input");
-var outputDiv = document.querySelector("output")
+var outputDiv = document.querySelector("#output");
 
 
 serverUrl= "https://api.funtranslations.com/translate/sith.json"
