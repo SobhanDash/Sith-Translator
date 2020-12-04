@@ -19,7 +19,8 @@ body {
     font-family: 'Nerko One', cursive;
     margin: 0px;
     color: var(--darkgrey);
-    background: url('minion3.png'), var(--primary);
+    background: url('/images/sithbgmain.png'), var(--primary);
+    background-position: center;
 }
 
 /* nav */
